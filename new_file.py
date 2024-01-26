@@ -1,1 +1,2 @@
-print('rijgrkjg')
+x = 'test'
+print(x)
