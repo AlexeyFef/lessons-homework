@@ -1,3 +1,4 @@
+# определяем, високосный ли год
 def is_year_leap(year):
     if year % 4 == 0:
         return(True)
