@@ -1,9 +1,7 @@
 def is_year_leap(year):
-    year = int(year)
     if year % 4 == 0:
-        res = True
+        return(True)
     else: 
-        res = False
-    return(res)
-vis = is_year_leap(2000)
-print('Год 2000:', vis)
+        return(False)
+visok = is_year_leap(2000)
+print('Год 2000:', visok)
