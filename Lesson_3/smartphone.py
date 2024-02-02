@@ -1,3 +1,5 @@
+# создаем класс Smartphone с тремя параметрами
+
 class Smartphone:
 
     tel_brand = 'No brand telephone'

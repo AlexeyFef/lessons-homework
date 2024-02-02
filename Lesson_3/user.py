@@ -1,3 +1,5 @@
+# создаем класс User, объявляем конструктор, создаем три класса 
+
 class User:
 
     first_name = "No First Name"
