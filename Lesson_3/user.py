@@ -1,5 +1,5 @@
 class User:
-    
+
     first_name = "No First Name"
     last_name = "No Lst Name"
     
@@ -15,8 +15,3 @@ class User:
 
     def sayFirstNameLastName(self):
         print(self.first_name, self.last_name)    
-
-newUser = User('Alex', 'Fef')
-newUser.sayFirstName()
-newUser.sayLastName()
-newUser.sayFirstNameLastName()
