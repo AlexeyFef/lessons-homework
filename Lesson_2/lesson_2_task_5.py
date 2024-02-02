@@ -1,4 +1,4 @@
-# сезон года в зависимости от месяца
+# сезон года в зависимости от месяца года
 def month_to_season(number_month):
     if 1 > number_month or number_month > 12:
         print('Такого месяца не существует')
