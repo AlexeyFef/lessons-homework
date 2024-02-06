@@ -1,3 +1,5 @@
+# импортируем классы Address, Mailing, создаем новый экземпляр класса Mailing, выводим сообщение об отправлении.
+
 from address import Address
 from mailing import Mailing
 
