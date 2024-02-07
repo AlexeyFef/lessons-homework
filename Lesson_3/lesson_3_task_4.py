@@ -32,7 +32,7 @@ cheburashka = turtle.Turtle()
 cheburashka.shape("classic")
 cheburashka.color("brown")
 
-# рисуем тело
+# рисуем тело чебурашки
 cheburashka.penup()
 cheburashka.goto(-50, -50)
 cheburashka.pendown()
