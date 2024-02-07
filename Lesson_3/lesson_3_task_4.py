@@ -47,7 +47,7 @@ cheburashka.forward(150)
 cheburashka.left(90)
 cheburashka.end_fill()
 
-# рисуем голову
+# рисуем голову чебурашки
 cheburashka.penup()
 cheburashka.goto(0, 100)
 cheburashka.pendown()
@@ -55,7 +55,7 @@ cheburashka.begin_fill()
 cheburashka.circle(30)
 cheburashka.end_fill()
 
-# рисуем уши
+# рисуем уши чебурашки
 cheburashka.penup()
 cheburashka.goto(40, 120)
 cheburashka.pendown()
@@ -70,7 +70,7 @@ cheburashka.begin_fill()
 cheburashka.circle(10)
 cheburashka.end_fill()
 
-# рисуем глаза
+# рисуем глаза чебурашки
 cheburashka.penup()
 cheburashka.goto(-15, 135)
 cheburashka.pendown()
@@ -80,7 +80,7 @@ cheburashka.goto(15, 135)
 cheburashka.pendown()
 cheburashka.dot(10, "blue")
 
-# рисуем рот
+# рисуем рот чебурашки
 cheburashka.color("green")
 cheburashka.penup()
 cheburashka.goto(-10, 120)
