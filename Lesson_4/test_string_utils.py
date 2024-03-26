@@ -76,3 +76,39 @@ def test_string_to_list_one_symbol():
     string_utils = StringUtils()
     res = string_utils.to_list("M")
     assert res == ["M"]
+
+def test_contains_capitals_symbol():
+    string_utils = StringUtils()
+    res = string_utils.contains("My first Test 99", "T")
+    assert res == True
+
+def test_contains_lowercase_symbol_():
+    string_utils = StringUtils()
+    res = string_utils.contains("My first Test 99", "f")
+    assert res == True
+
+
+def test_contains_number():
+    string_utils = StringUtils()
+    res = string_utils.contains("My first Test9", "9")
+    assert res == True
+
+def test_not_contains_symbol():
+    string_utils = StringUtils()
+    res = string_utils.contains("My first Test 99", "V")
+    assert res == False
+
+def test_delete_symbol_five_lowercase_symbol():
+    string_utils = StringUtils()
+    res = string_utils.delete_symbol("My first test 99", "first")
+    assert res == "My  test 99"
+
+def test_delete_symbol_one_capital_symbol():
+    string_utils = StringUtils()
+    res = string_utils.delete_symbol("My first Mest 99", "M")
+    assert res == "y first est 99"   
+
+def test_delete_symbol_five_lowercase_symbol_and_number():
+    string_utils = StringUtils()
+    res = string_utils.delete_symbol("My first 99 test", "first 99")
+    assert res == "My  test"
