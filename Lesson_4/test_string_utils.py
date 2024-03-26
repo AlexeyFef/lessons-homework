@@ -87,7 +87,6 @@ def test_contains_lowercase_symbol_():
     res = string_utils.contains("My first Test 99", "f")
     assert res == True
 
-
 def test_contains_number():
     string_utils = StringUtils()
     res = string_utils.contains("My first Test9", "9")
@@ -108,7 +107,72 @@ def test_delete_symbol_one_capital_symbol():
     res = string_utils.delete_symbol("My first Mest 99", "M")
     assert res == "y first est 99"   
 
-def test_delete_symbol_five_lowercase_symbol_and_number():
+def test_delete_symbol_four_lowercase_symbol_and_number():
     string_utils = StringUtils()
-    res = string_utils.delete_symbol("My first 99 test", "first 99")
-    assert res == "My  test"
+    res = string_utils.delete_symbol("My first test 99", "test 99")
+    assert res == "My first "
+
+def test_starts_with_symbol():
+    string_utils = StringUtils()
+    res = string_utils.starts_with("My first test", "M")
+    assert res == True
+
+def test_starts_with_number():
+    string_utils = StringUtils()
+    res = string_utils.starts_with("1my first test", "1")
+    assert res == True
+
+def test_not_starts_with_symbol():
+    string_utils = StringUtils()
+    res = string_utils.starts_with("My first test", "e")
+    assert res == False
+
+def test_end_with_symbol():
+    string_utils = StringUtils()
+    res = string_utils.end_with("My first test", "t")
+    assert res == True
+
+def test_end_with_number():
+    string_utils = StringUtils()
+    res = string_utils.end_with("My first test 99", "99")
+    assert res == True
+
+def test_not_end_with_symbol():
+    string_utils = StringUtils()
+    res = string_utils.end_with("My first test", "r")
+    assert res == False
+
+def test_is_empty():
+    string_utils = StringUtils()
+    res = string_utils.is_empty("")
+    assert res == True
+
+def test_is_empty_spaces():
+    string_utils = StringUtils()
+    res = string_utils.is_empty("   ")
+    assert res == True
+
+def test_not_is_empty():
+    string_utils = StringUtils()
+    res = string_utils.is_empty("My ")
+    assert res == False
+
+def test_list_to_string_symbols():
+    string_utils = StringUtils()
+    res = string_utils.list_to_string(["My", "first", "test"])
+    assert res == ("My, first, test")
+
+def test_list_to_string_symbols_joiner():
+    string_utils = StringUtils()
+    res = string_utils.list_to_string(["My", "first", "test"], " ")
+    assert res == ("My first test")
+
+def test_list_to_string_symbols_numbers_joiner():
+    string_utils = StringUtils()
+    res = string_utils.list_to_string(["My", "first", "test", "11"], " ")
+    assert res == ("My first test 11")
+
+def test_list_to_string_empty_list():
+    string_utils = StringUtils()
+    res = string_utils.list_to_string([])
+    assert res == ("")
