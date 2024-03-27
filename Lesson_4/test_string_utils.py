@@ -43,11 +43,13 @@ def test_capitilize_all_capitals_letters_except_first_lowercase():
     res = string_utils.capitilize("sKYPRO")
     assert res == "SKYPRO"
 
+@pytest.mark.test_trim
 def test_trim_spaces_before():
     string_utils = StringUtils()
     res = string_utils.trim("      My first test")
     assert res == "My first test"
 
+@pytest.mark.test_trim
 def test_trim_without_spaces_before():
     string_utils = StringUtils()
     res = string_utils.trim("My first test")
