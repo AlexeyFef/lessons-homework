@@ -1,3 +1,4 @@
+import pytest
 from string_utils import StringUtils
 
 string_utils = StringUtils()
@@ -29,8 +30,8 @@ def test_capitilize_only_numbers():
 
 def test_capitilize_without_argument():
     string_utils = StringUtils()
-    res = string_utils.capitilize()
-    assert res == "   "             
+    with pytest.raises(TypeError):
+        string_utils.capitilize()             
 
 def test_capitilize_all_lowercase_letters_except_first_number():
     string_utils = StringUtils()
