@@ -15,4 +15,4 @@ driver.save_screenshot('./ya.png')
 # driver.forward()
 # driver.refresh()
 
-sleep(10)
+sleep(15)
