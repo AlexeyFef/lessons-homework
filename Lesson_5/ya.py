@@ -6,7 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.maximize_window()
 driver.get("https://ya.ru")
-sleep(4)
+sleep(5)
 driver.fullscreen_window()
 driver.save_screenshot('./ya1.png')
 
