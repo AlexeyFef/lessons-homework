@@ -8,11 +8,11 @@ driver.maximize_window()
 driver.get("https://ya.ru")
 sleep(3)
 driver.fullscreen_window()
-driver.save_screenshot('./ya.png')
+driver.save_screenshot('./ya1.png')
 
 # driver.get("https://vk.ru")
 # driver.back()
 # driver.forward()
 # driver.refresh()
 
-sleep(15)
+sleep(10)
